@@ -1,65 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context=".UploadKerjaan">
 
-    <TextView
-        android:id="@+id/titleKerja"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="50dp"
-        android:text="title kerja"
-        app:layout_constraintBottom_toTopOf="@+id/upahKerja"
-        app:layout_constraintStart_toStartOf="@+id/upahKerja" />
 
-    <TextView
-        android:id="@+id/upahKerja"
+
+
+    <EditText
+        android:id="@+id/inputTitleKerja"
+        android:layout_width="234dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:hint="Masukkan nama pekerjaan"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="89dp"
+        tools:layout_editor_absoluteY="244dp" />
+
+    <EditText
+        android:id="@+id/inputUpahKerja"
+        android:layout_width="223dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:hint="Masukkan upah kerja"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="94dp"
+        tools:layout_editor_absoluteY="314dp" />
+
+    <EditText
+        android:id="@+id/inputKontak"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginBottom="44dp"
-        android:text="upah kerja"
-        app:layout_constraintBottom_toTopOf="@+id/inputTitleKerja"
-        app:layout_constraintStart_toStartOf="@+id/inputTitleKerja" />
+        android:ems="10"
+        android:hint="kontak"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="93dp"
+        tools:layout_editor_absoluteY="389dp" />
 
     <Button
         android:id="@+id/simpanButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="88dp"
-        android:layout_marginLeft="88dp"
-        android:layout_marginTop="70dp"
         android:text="simpan"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputUpahKerja" />
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="488dp" />
 
-    <EditText
-        android:id="@+id/inputTitleKerja"
-        android:layout_width="234dp"
-        android:layout_height="44dp"
-        android:layout_marginStart="84dp"
-        android:layout_marginLeft="84dp"
-        android:layout_marginTop="244dp"
-        android:ems="10"
-        android:hint="Masukkan nama pekerjaan"
-        android:inputType="textPersonName"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/inputUpahKerja"
-        android:layout_width="223dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="24dp"
-        android:ems="10"
-        android:hint="Masukkan upah kerja"
-        android:inputType="textPersonName"
-        app:layout_constraintStart_toStartOf="@+id/inputTitleKerja"
-        app:layout_constraintTop_toBottomOf="@+id/inputTitleKerja" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

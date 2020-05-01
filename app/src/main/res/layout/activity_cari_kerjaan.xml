@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context=".CariKerjaan">
 
 
@@ -11,10 +16,7 @@
         android:id="@+id/titleKerjaan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="117dp"
-        android:layout_marginLeft="117dp"
-        android:layout_marginTop="127dp"
-        android:text="Title Pekerjaan"
+        android:text="@string/titleKerjaan"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -22,10 +24,15 @@
         android:id="@+id/upahKerjaan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginLeft="4dp"
-        android:layout_marginTop="33dp"
-        android:text="Upah Pekerjaan"
+        android:text="@string/upahKerjaan"
         app:layout_constraintStart_toStartOf="@+id/titleKerjaan"
         app:layout_constraintTop_toBottomOf="@+id/titleKerjaan" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/kontakHandle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/kontakHandle"
+        app:layout_constraintStart_toStartOf="@+id/upahKerjaan"
+        app:layout_constraintTop_toBottomOf="@+id/upahKerjaan" />
+</LinearLayout>

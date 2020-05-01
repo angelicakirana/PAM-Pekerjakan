@@ -1,3 +1,28 @@
 <resources>
     <string name="app_name">Pekerjakan</string>
+    <string name="titleKerjaan">Title Pekerjaan disini!</string>
+    <string name="upahKerjaan">Upah Pekerjaan disini!</string>
+    <string name="kontakHandle">Kontak Pekerja disini!</string>
+
+    <string-array name="titleKerja">
+        <item>Fullstack</item>
+        <item>Designer</item>
+        <item>Product Owner</item>
+        <item>Product Manager</item>
+        <item>Tech Lead</item>
+        <item>BackEnd</item>
+        <item>FrontEnd</item>
+        <item>UX Engineer</item>
+    </string-array>
+
+    <string-array name="upahKerja">
+        <item>duajuta</item>
+        <item>duajuta</item>
+        <item>duajuta</item>
+        <item>duajuta</item>
+        <item>duajuta</item>
+        <item>duajuta</item>
+        <item>duajuta</item>
+        <item>duajuta</item>
+    </string-array>
 </resources>

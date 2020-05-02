@@ -24,11 +24,20 @@
             android:id="@+id/upahKerja"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="50dp"
+            android:layout_marginTop="30dp"
             android:text="@string/upahKerjaan"
             app:layout_constraintStart_toStartOf="@+id/titleKerja"
             app:layout_constraintTop_toBottomOf="@+id/titleKerja" />
+
+        <TextView
+            android:id="@+id/kontakHandle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="40dp"
+            android:text="@string/kontakHandle"
+            app:layout_constraintStart_toStartOf="@+id/upahKerja"
+            app:layout_constraintTop_toBottomOf="@+id/upahKerja" />
 
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

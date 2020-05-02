@@ -35,4 +35,10 @@
         android:text="@string/kontakHandle"
         app:layout_constraintStart_toStartOf="@+id/upahKerjaan"
         app:layout_constraintTop_toBottomOf="@+id/upahKerjaan" />
+
+    <Button
+        android:id="@+id/uploadButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload" />
 </LinearLayout>

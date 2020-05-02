@@ -15,21 +15,29 @@
         android:id="@+id/uploadButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="126dp"
+        android:layout_marginTop="256dp"
         android:layout_marginLeft="126dp"
-        android:layout_marginTop="268dp"
         android:text="Upload Kerja"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+         />
 
     <Button
         android:id="@+id/cariButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="126dp"
         android:layout_marginLeft="126dp"
-        android:layout_marginTop="43dp"
+        android:layout_marginTop="126dp"
         android:text="Cari Kerja"
-        app:layout_constraintBottom_toTopOf="@+id/uploadButton"
-        app:layout_constraintStart_toStartOf="@+id/uploadButton" />
+        />
+
+    <Button
+        android:id="@+id/logOutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LogOut" />
+
+    <TextView
+        android:id="@+id/nameView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="nama disini" />
 </LinearLayout>

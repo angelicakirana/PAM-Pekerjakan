@@ -65,7 +65,7 @@ public class UploadKerjaan extends AppCompatActivity {
 //                mUpahRef.setValue(upah);
 //                mKontakRef.setValue(kontak);
 
-                Intent myIntent = new Intent(UploadKerjaan.this,   CariKerjaan.class);
+                Intent myIntent = new Intent(UploadKerjaan.this,   ConfirmPage.class);
                 myIntent.putExtra("title", title);
                 myIntent.putExtra("upah", upah);
                 myIntent.putExtra("kontak", kontak);

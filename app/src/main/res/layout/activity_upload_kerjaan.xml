@@ -12,7 +12,13 @@
     tools:context=".UploadKerjaan">
 
 
-
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back To Menu"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="488dp" />
 
     <EditText
         android:id="@+id/inputTitleKerja"
@@ -39,7 +45,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="kontak"
+        android:hint="Masukkan kontak"
         android:inputType="textPersonName"
         tools:layout_editor_absoluteX="93dp"
         tools:layout_editor_absoluteY="389dp" />
@@ -52,12 +58,6 @@
         tools:layout_editor_absoluteX="84dp"
         tools:layout_editor_absoluteY="488dp" />
 
-    <Button
-        android:id="@+id/backButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Back To Menu"
-        tools:layout_editor_absoluteX="84dp"
-        tools:layout_editor_absoluteY="488dp" />
+
 
 </LinearLayout>

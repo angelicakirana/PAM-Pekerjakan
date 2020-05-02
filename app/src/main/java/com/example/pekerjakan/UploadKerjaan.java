@@ -22,7 +22,7 @@ import java.util.Map;
 
 public class UploadKerjaan extends AppCompatActivity {
 
-    Button simpanButton;
+    Button simpanButton, backButton;
     EditText inputtitleKerja, inputupahKerja, inputKontak;
 
 //    FirebaseDatabase database = FirebaseDatabase.getInstance();
@@ -40,11 +40,18 @@ public class UploadKerjaan extends AppCompatActivity {
 
         //UI Elements
         simpanButton = (Button) findViewById(R.id.simpanButton);
+        backButton = (Button) findViewById(R.id.backButton);
         inputtitleKerja = (EditText) findViewById(R.id.inputTitleKerja);
         inputupahKerja = (EditText) findViewById(R.id.inputUpahKerja);
         inputKontak = (EditText) findViewById(R.id.inputKontak);
 
-
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(UploadKerjaan.this,   MainActivity.class);
+                startActivity(myIntent);
+            }
+        });
 
         simpanButton.setOnClickListener(new View.OnClickListener() {
             @Override

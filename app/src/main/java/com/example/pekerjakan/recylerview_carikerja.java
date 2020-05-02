@@ -5,10 +5,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -20,6 +22,7 @@ import com.google.firebase.firestore.Query;
 public class recylerview_carikerja extends AppCompatActivity {
 
 //    String titlekerja[], upahkerja[];
+    Button backButton;
     private FirebaseFirestore firebaseFirestore;
     FirestoreRecyclerAdapter adapter;
     RecyclerView carikerja;
@@ -29,6 +32,7 @@ public class recylerview_carikerja extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.recyclerview_carikerja);
 
+        backButton=(Button) findViewById(R.id.backButton);
         firebaseFirestore = FirebaseFirestore.getInstance();
         carikerja = (RecyclerView) findViewById(R.id.carikerja_recycler);
         //ubah untuk populate data shown dari firebase realtime database
@@ -67,7 +71,16 @@ public class recylerview_carikerja extends AppCompatActivity {
 //        MyAdapter myAdapter = new MyAdapter(this, titlekerja, upahkerja);
 //        carikerja.setAdapter(myAdapter);
 //        carikerja.setLayoutManager(new LinearLayoutManager(this));
+
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(recylerview_carikerja.this,   MainActivity.class);
+                startActivity(myIntent);
+            }
+        });
     }
+
 
     private class LokerViewHolder extends RecyclerView.ViewHolder{
         TextView list_title, list_upah, list_kontak;

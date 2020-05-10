@@ -75,7 +75,7 @@ public class recylerview_carikerja extends AppCompatActivity {
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent myIntent = new Intent(recylerview_carikerja.this,   MainActivity.class);
+                Intent myIntent = new Intent(recylerview_carikerja.this,   Beranda.class);
                 startActivity(myIntent);
             }
         });

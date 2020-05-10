@@ -14,25 +14,27 @@
 
     <Button
         android:id="@+id/backButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Back To Menu"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/backbg"
         tools:layout_editor_absoluteX="84dp"
         tools:layout_editor_absoluteY="488dp" />
 
     <EditText
         android:id="@+id/inputTitleKerja"
-        android:layout_width="234dp"
+        android:layout_width="match_parent"
         android:layout_height="46dp"
         android:ems="10"
         android:hint="Masukkan nama pekerjaan"
+        android:background="@drawable/inputbg"
         android:inputType="textPersonName"
         tools:layout_editor_absoluteX="89dp"
         tools:layout_editor_absoluteY="244dp" />
 
     <EditText
         android:id="@+id/inputUpahKerja"
-        android:layout_width="223dp"
+        android:background="@drawable/inputbg"
+        android:layout_width="match_parent"
         android:layout_height="46dp"
         android:ems="10"
         android:hint="Masukkan upah kerja"
@@ -42,8 +44,9 @@
 
     <EditText
         android:id="@+id/inputKontak"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@drawable/inputbg"
         android:ems="10"
         android:hint="Masukkan kontak"
         android:inputType="textPersonName"
@@ -55,6 +58,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="simpan"
+        android:layout_marginLeft="130dp"
+        android:background="@drawable/buttonbg"
         tools:layout_editor_absoluteX="84dp"
         tools:layout_editor_absoluteY="488dp" />
 

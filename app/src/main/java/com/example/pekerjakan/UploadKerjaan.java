@@ -2,12 +2,14 @@ package com.example.pekerjakan;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 //import com.google.firebase.database.DatabaseReference;
 //import com.google.firebase.database.FirebaseDatabase;
@@ -61,16 +63,21 @@ public class UploadKerjaan extends AppCompatActivity {
                 String kontak = inputKontak.getText().toString();
 
 
-//                mTitleRef.setValue(title);
-//                mUpahRef.setValue(upah);
-//                mKontakRef.setValue(kontak);
+                if(title.isEmpty() || upah.isEmpty() || kontak.isEmpty()){
+                    Context context = getApplicationContext();
+                    CharSequence text = "Seluruh field harus diisi!";
+                    int duration = Toast.LENGTH_SHORT;
 
-                Intent myIntent = new Intent(UploadKerjaan.this,   ConfirmPage.class);
-                myIntent.putExtra("title", title);
-                myIntent.putExtra("upah", upah);
-                myIntent.putExtra("kontak", kontak);
+                    Toast toast = Toast.makeText(context, text, duration);
+                    toast.show();
+                } else {
+                    Intent myIntent = new Intent(UploadKerjaan.this, ConfirmPage.class);
+                    myIntent.putExtra("title", title);
+                    myIntent.putExtra("upah", upah);
+                    myIntent.putExtra("kontak", kontak);
 
-                startActivity(myIntent);
+                    startActivity(myIntent);
+                }
             }
         });
 
